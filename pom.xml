@@ -19,17 +19,17 @@
   <description>Сarshering system for Grodno</description>
   
   <modules>
-	  <module>carsharing-core</module>
-	  <module>carsharing-rest</module>
 	  <module>carsharing-entity</module>
 	  <module>carsharing-dao</module>
-	  <module>carsharing-services</module>
 	  <module>carsharing-api</module>
+	  <module>carsharing-services</module>
+	  <module>carsharing-rest</module>
+	  <module>carsharing-core</module>
   </modules>
 
   <properties>
 	  <start-class>carsharing-core.by.grodno.carsharing.CarsharingApplication</start-class>
-	  <java.version>20</java.version>
+	  <java.version>17</java.version>
 	  
 	  <spring-boot.version>3.0.5</spring-boot.version>
 	  <lombok.version>1.18.24</lombok.version>
@@ -87,6 +87,11 @@
 					</excludes>
 				</configuration>
 			</plugin>
+			
+			<plugin>
+			    <groupId>org.apache.maven.plugins</groupId>
+			    <artifactId>maven-resources-plugin</artifactId>
+			</plugin>	
 		</plugins>
 	</build>
 </project>
