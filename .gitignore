@@ -9,7 +9,8 @@
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
-*.target/*
+target/*
+*/.settings/*
 
 # Package Files #
 *.jar
@@ -19,7 +20,12 @@
 *.zip
 *.tar.gz
 *.rar
-
+*.jar.*
+*.lts
+*.project
+*.prefs
+*.original
+*.settings/*
 #Properties Files
 *.properties
 

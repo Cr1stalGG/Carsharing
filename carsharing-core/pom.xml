@@ -16,6 +16,30 @@
 		 <groupId>org.springframework.boot</groupId>
 		 <artifactId>spring-boot-starter</artifactId>
  	  </dependency>
+ 	  
+ 	  <dependency>
+		   <groupId>by.grodno.carsharing.multimodule</groupId>
+		   <artifactId>carsharing-api</artifactId>
+		   <version>0.0.1-SNAPSHOT</version>
+	   </dependency>
+	   
+	   <dependency>
+		   <groupId>by.grodno.carsharing.multimodule</groupId>
+		   <artifactId>carsharing-rest</artifactId>
+		   <version>0.0.1-SNAPSHOT</version>
+	   </dependency>
+	   
+	   <dependency>
+		   <groupId>by.grodno.carsharing.multimodule</groupId>
+		   <artifactId>carsharing-entity</artifactId>
+		   <version>0.0.1-SNAPSHOT</version>
+	   </dependency>
+	   
+	   <dependency>
+		   <groupId>by.grodno.carsharing.multimodule</groupId>
+		   <artifactId>carsharing-dao</artifactId>
+		   <version>0.0.1-SNAPSHOT</version>
+	   </dependency>
   </dependencies>
 
 </project>
