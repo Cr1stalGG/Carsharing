@@ -1,28 +1,22 @@
-package by.grodno.carsharing.multimodule.entity;
+package by.grodno.carsharing.multimodule.dto.car;
 
 import java.sql.Date;
 import java.sql.Time;
 
 import by.grodno.carsharing.multimodule.enumiration.CarType;
 import by.grodno.carsharing.multimodule.enumiration.Color;
-import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.ToString;
 
-@Entity
 @Builder
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Getter
 @Setter
-@EqualsAndHashCode(callSuper = true)
-@ToString
-public class BoughtCar extends BaseEntity<Long>{
+public class BoughtCarMainInfoDTO {
 	private CarType carType;
 	private Color color;
 	private Time time;

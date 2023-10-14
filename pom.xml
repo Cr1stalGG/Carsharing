@@ -25,6 +25,7 @@
 	  <module>carsharing-services</module>
 	  <module>carsharing-rest</module>
 	  <module>carsharing-core</module>
+	  <module>carsharing-utils</module>
   </modules>
 
   <properties>
