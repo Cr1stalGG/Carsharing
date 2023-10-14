@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Build-Jdk-Spec: 17
+Implementation-Title: carsharing-dao
+Implementation-Version: 0.0.1-SNAPSHOT
+Main-Class: carsharing-core.by.grodno.carsharing.CarsharingApplication
+Created-By: Maven Integration for Eclipse
+

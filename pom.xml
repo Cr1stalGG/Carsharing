@@ -1,0 +1,92 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>by.grodno.carsharing</groupId>
+  <artifactId>Carsharing</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <packaging>pom</packaging>
+  
+  <parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.0.5</version>
+		<relativePath/>
+  </parent>
+  
+  <name>Carsharing</name>
+  <description>Сarshering system for Grodno</description>
+  
+  <modules>
+	  <module>carsharing-core</module>
+	  <module>carsharing-rest</module>
+	  <module>carsharing-entity</module>
+	  <module>carsharing-dao</module>
+	  <module>carsharing-services</module>
+	  <module>carsharing-api</module>
+  </modules>
+
+  <properties>
+	  <start-class>carsharing-core.by.grodno.carsharing.CarsharingApplication</start-class>
+	  <java.version>20</java.version>
+	  
+	  <spring-boot.version>3.0.5</spring-boot.version>
+	  <lombok.version>1.18.24</lombok.version>
+	  <postgres.version>42.5.1</postgres.version>
+  </properties>
+
+  <dependencyManagement>
+	  <dependencies>
+		 <dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter</artifactId>
+		    <version>${spring-boot.version}</version>
+		 </dependency>
+		 
+		 <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+			<version>${spring-boot.version}</version>
+		</dependency>
+		 
+		 <dependency>
+		    <groupId>org.projectlombok</groupId>
+		    <artifactId>lombok</artifactId>
+		    <version>${lombok.version}</version>
+		    <scope>provided</scope>
+		 </dependency>
+		 
+		 <dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>${postgres.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+			<version>${spring-boot.version}</version>
+		</dependency>
+
+	  </dependencies>
+  </dependencyManagement>
+  
+  <build>
+	<plugins>
+		<plugin>
+			<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<excludes>
+						<exclude>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok</artifactId>
+						</exclude>
+					</excludes>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
