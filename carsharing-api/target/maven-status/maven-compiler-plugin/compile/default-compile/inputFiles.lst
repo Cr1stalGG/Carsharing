@@ -1,4 +1,9 @@
 E:\projects\Carsharing\carsharing-api\src\main\java\by\grodno\carsharing\multimodule\api\AccountService.java
+E:\projects\Carsharing\carsharing-api\src\main\java\by\grodno\carsharing\multimodule\dto\account\security\AuthResponse.java
+E:\projects\Carsharing\carsharing-api\src\main\java\by\grodno\carsharing\multimodule\dto\account\security\AuthRequest.java
+E:\projects\Carsharing\carsharing-api\src\main\java\by\grodno\carsharing\multimodule\dto\card\CardMainInfoDTO.java
 E:\projects\Carsharing\carsharing-api\src\main\java\by\grodno\carsharing\multimodule\api\CardService.java
 E:\projects\Carsharing\carsharing-api\src\main\java\by\grodno\carsharing\multimodule\api\AdminService.java
+E:\projects\Carsharing\carsharing-api\src\main\java\by\grodno\carsharing\multimodule\dto\account\AccountMainInfoDTO.java
+E:\projects\Carsharing\carsharing-api\src\main\java\by\grodno\carsharing\multimodule\dto\car\BoughtCarMainInfoDTO.java
 E:\projects\Carsharing\carsharing-api\src\main\java\by\grodno\carsharing\multimodule\api\CarService.java
