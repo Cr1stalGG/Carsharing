@@ -1,5 +1,8 @@
 package by.grodno.carsharing.multimodule.api;
 
-public interface AdminService {
+import by.grodno.carsharing.multimodule.dto.car.CarCreationDTO;
 
+public interface AdminService {
+	String addCar(CarCreationDTO carDTO);
+	String deleteCar(long carId);
 }
